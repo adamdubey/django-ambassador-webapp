@@ -15,8 +15,36 @@ docker-compose up
 
 ---
 
+## QRH Commands
+
+```sh
+## Docker & Docker Compose ##
+
+# Build Stack
+docker-compose up --build
+
+# Start Stack
+docker-compose up
+
+# Stop Stack
+docker-compose down
+
+---
+
+## Migrations ##
+
+# Localhost:
+python3 manage.py makemigrations
+
+# Container:
+docker-compose exec backend sh
+python manage.py migrate
+```
+
+---
+
 ## Technologies & Frameworks
 
-- [Django]()
-- [Docker]()
-- [Python]()
+- [Django](https://www.djangoproject.com/)
+- [Docker](https://www.docker.com/)
+- [Python](https://www.python.org/)
