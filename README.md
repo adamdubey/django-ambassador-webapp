@@ -20,11 +20,21 @@ python3 manage.py makemigrations
 
 # Container:
 docker-compose exec backend sh
+python manage.py makemigrations
 python manage.py migrate
 
 ## User Manager ##
 docker-compose exec backend sh
 python manage.py createsuperuser --email=dev@dev.com
+
+
+## Administrator Manager ##
+docker-compose exec backend sh
+python manage.py startapp administrator
+python manage.py startapp common
+
+## Faker User Data Generation##
+python manage.py populate_ambassadors
 ```
 
 ---
