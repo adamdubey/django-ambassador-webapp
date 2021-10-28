@@ -1,44 +1,13 @@
-# django-ambassador
+# django-ambassador-webapp
 ---
 
 ## Quick Start
 
 ```sh
-# Start Application Server
-python3 manage.py runserver
+# Start Application Workload Stack
+docker-compose up
 
 # In Browser, visit http://127.0.0.1:8000/
-
-# With Docker:
-docker-compose up
-```
-
----
-
-## QRH Commands
-
-```sh
-## Docker & Docker Compose ##
-
-# Build Stack
-docker-compose up --build
-
-# Start Stack
-docker-compose up
-
-# Stop Stack
-docker-compose down
-
----
-
-## Migrations ##
-
-# Localhost:
-python3 manage.py makemigrations
-
-# Container:
-docker-compose exec backend sh
-python manage.py migrate
 ```
 
 ---
