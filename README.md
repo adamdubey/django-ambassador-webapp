@@ -8,6 +8,23 @@
 docker-compose up
 
 # In Browser, visit http://127.0.0.1:8000/
+# Stop Stack
+docker-compose down
+
+---
+
+## Migrations ##
+
+# Localhost:
+python3 manage.py makemigrations
+
+# Container:
+docker-compose exec backend sh
+python manage.py migrate
+
+## User Manager ##
+docker-compose exec backend sh
+python manage.py createsuperuser --email=dev@dev.com
 ```
 
 ---
