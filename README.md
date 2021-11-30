@@ -40,6 +40,7 @@ python manage.py createsuperuser --email=dev@dev.com
 ## Administrator Manager ##
 python manage.py startapp administrator
 python manage.py startapp common
+python manage.py startapp ambassador
 
 ## Faker User Data Generation##
 python manage.py populate_ambassadors
@@ -52,3 +53,5 @@ python manage.py populate_ambassadors
 - [Django](https://www.djangoproject.com/)
 - [Docker](https://www.docker.com/)
 - [Python](https://www.python.org/)
+- [React.js](https://reactjs.org/)
+- [Redis](https://redis.io/)

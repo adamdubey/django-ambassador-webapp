@@ -2,8 +2,11 @@ from django.core.management import BaseCommand
 from django.db import connections
 from django.db.utils import OperationalError
 import time
+
 from faker import Faker
+
 from core.models import User
+
 
 class Command(BaseCommand):
     def handle(self, *args, **options):
@@ -17,5 +20,5 @@ class Command(BaseCommand):
                 password='',
                 is_ambassador=True
             )
-            user.set_password('Fake1234')
+            user.set_password('1234')
             user.save()
