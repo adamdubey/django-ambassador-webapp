@@ -12,42 +12,6 @@ docker-compose up
 
 ---
 
-## QRH Commands
-
-```sh
-## Docker & Docker Compose ##
-
-## Build Stack ##
-docker-compose up --build
-
-## Start Stack ##
-docker-compose up
-
-## Stop Stack ##
-docker-compose down
-
-
-## Migrations ##
-docker-compose exec backend sh
-python manage.py makemigrations
-python manage.py migrate
-
-
-## User Manager ##
-python manage.py createsuperuser --email=dev@dev.com
-
-
-## Administrator Manager ##
-python manage.py startapp administrator
-python manage.py startapp common
-python manage.py startapp ambassador
-
-## Faker User Data Generation##
-python manage.py populate_ambassadors
-```
-
----
-
 ## Technologies & Frameworks
 
 - [Django](https://www.djangoproject.com/)
