@@ -3,6 +3,7 @@ from faker import Faker
 from random import randrange
 from core.models import Product
 
+
 class Command(BaseCommand):
     def handle(self, *args, **options):
         faker = Faker()
